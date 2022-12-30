@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            width: 30%;
+            margin: 0 auto;
+        }
+        fieldset>div{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        input{
+            width: 50%;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+            <h1>Bill Calculation</h1>
+            <fieldset>
+                <div>
+                    <label for="rate">Enter The Bill Amount:</label>
+                    <input type="number" id="rate" placeholder="enter the bill amount">
+                </div>
+                <div>
+                    <label for="tips">Enter Your Tips:</label>    
+                    <input type="number" id="tips" placeholder="enter the tips percentage">
+                </div>
+                <div>
+                    <label for="tips-rate">Your Tips Amount:</label>
+                    <input type="number" id="tips-rate" disabled placeholder="your tips amount">
+                </div>
+                <div>
+                    <label for="total">Total Amount:</label>
+                    <input type="number" id="total" disabled placeholder="pay your total amount">
+                </div>
+                <div>
+                    <button id="btn">Click me</button>
+                </div>
+            </fieldset>
+            <p id="res"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
